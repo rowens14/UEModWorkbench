@@ -1,0 +1,40 @@
+{
+  "ID_Health_Injector.uasset": [
+    {
+      "title": "5 uses instead of 1",
+      "steps": [
+        {
+          "export": 5,
+          "exportName": "U_ItemUsage_C_0",
+          "property": "MaxValue",
+          "type": "Float",
+          "value": "5",
+          "note": "Maximum charges/uses of the injector."
+        },
+        {
+          "export": 10,
+          "exportName": "U_UseMedic_HealthInjector_C_2",
+          "property": "ToTriggerActions",
+          "type": "Array",
+          "value": "length 5",
+          "note": "One trigger action per use; duplicate an existing entry for each additional use."
+        }
+      ],
+      "tip": "Change both together. Mismatched counts can crash the game or grant only partial uses."
+    },
+    {
+      "title": "Double heal amount",
+      "steps": [
+        {
+          "export": 3,
+          "exportName": "ID_Health_Injector",
+          "property": "ItemStats[1].Value",
+          "type": "Float",
+          "value": "10",
+          "note": "Heal amount stat (base 5)."
+        }
+      ],
+      "tip": "Higher values may exceed intended balance."
+    }
+  ]
+}

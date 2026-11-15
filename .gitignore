@@ -1,0 +1,33 @@
+# .NET / WPF build output
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+
+# Visual Studio / IDE
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+
+# Published build artifacts
+dist/
+
+# Machine-specific settings (absolute paths to game/mod folders and tools)
+directories.json
+
+# Editor backups created by the app
+*.bak
+*.bak.*
+
+# OS junk
+Thumbs.db
+.DS_Store
